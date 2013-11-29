@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/eventListener.xsd">
+	<import>
+		<eventlistener>
+			<eventclassname><![CDATA[wcf\system\user\authentication\UserAuthenticationFactory]]></eventclassname>
+			<eventname>init</eventname>
+			<environment>user</environment>
+			<listenerclassname><![CDATA[wcf\system\event\listener\ExtendedUserAuthenticationListener]]></listenerclassname>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname><![CDATA[wcf\system\user\authentication\UserAuthenticationFactory]]></eventclassname>
+			<eventname>init</eventname>
+			<environment>admin</environment>
+			<listenerclassname><![CDATA[wcf\system\event\listener\ExtendedUserAuthenticationListener]]></listenerclassname>
+		</eventlistener>
+	</import>
+</data>

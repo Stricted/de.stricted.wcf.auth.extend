@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.general.auth"><![CDATA[Authentication]]></item>
+		<item name="wcf.acp.option.category.general.auth.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.auth.general"><![CDATA[Authentication]]></item>
+		<item name="wcf.acp.option.category.general.auth.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.auth.db"><![CDATA[Authentication through external database]]></item>
+		<item name="wcf.acp.option.category.general.auth.db.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.auth.ldap"><![CDATA[Authentication through LDAP directory]]></item>
+		<item name="wcf.acp.option.category.general.auth.ldap.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.auth.imap"><![CDATA[Authentication through IMAP]]></item>
+		<item name="wcf.acp.option.category.general.auth.imap.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.auth.radius"><![CDATA[Authentication through Radius]]></item>
+		<item name="wcf.acp.option.category.general.auth.radius.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_check_wcf"><![CDATA[Check WCF User]]></item>
+		<item name="wcf.acp.option.auth_check_wcf.description"><![CDATA[]]></item>
+		<!--   -->
+		<item name="wcf.acp.option.auth_type"><![CDATA[Authentication Type]]></item>
+		<item name="wcf.acp.option.auth_type.description"><![CDATA[]]></item>
+		<!-- DB AUTH -->
+		<item name="wcf.acp.option.auth_db_type"><![CDATA[Database type]]></item>
+		<item name="wcf.acp.option.auth_db_type.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_host"><![CDATA[Database hostname]]></item>
+		<item name="wcf.acp.option.auth_db_host.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_port"><![CDATA[Database port]]></item>
+		<item name="wcf.acp.option.auth_db_port.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_user"><![CDATA[Database user]]></item>
+		<item name="wcf.acp.option.auth_db_user.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_password"><![CDATA[Database password]]></item>
+		<item name="wcf.acp.option.auth_db_password.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_name"><![CDATA[Database name]]></item>
+		<item name="wcf.acp.option.auth_db_name.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_tablename"><![CDATA[Database table name]]></item>
+		<item name="wcf.acp.option.auth_db_tablename.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_user"><![CDATA[Database column name for username]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_user.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_password"><![CDATA[Database column name for password]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_password.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_email"><![CDATA[Database column name for e-mail address]]></item>
+		<item name="wcf.acp.option.auth_db_fieldname_email.description"><![CDATA[(optional)]]></item>
+		<!-- LDAP AUTH -->
+		<item name="wcf.acp.option.auth_type_ldap_server"><![CDATA[LDAP address]]></item>
+		<item name="wcf.acp.option.auth_type_ldap_server.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_ldap_server_port"><![CDATA[LDAP port]]></item>
+		<item name="wcf.acp.option.auth_type_ldap_server_port.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_ldap_server_dn"><![CDATA[LDAP DN]]></item>
+		<item name="wcf.acp.option.auth_type_ldap_server_dn.description"><![CDATA[]]></item>
+		<!-- IMAP AUTH -->
+		<item name="wcf.acp.option.auth_type_imap_host"><![CDATA[IMAP address]]></item>
+		<item name="wcf.acp.option.auth_type_imap_host.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_imap_port"><![CDATA[IMAP port]]></item>
+		<item name="wcf.acp.option.auth_type_imap_port.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_imap_baseOptions"><![CDATA[IMAP options]]></item>
+		<item name="wcf.acp.option.auth_type_imap_baseOptions.description"><![CDATA[]]></item>
+		<!-- Radius AUTH -->
+		<item name="wcf.acp.option.auth_type_radius_host"><![CDATA[Radius address]]></item>
+		<item name="wcf.acp.option.auth_type_radius_host.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_radius_port"><![CDATA[Radius port]]></item>
+		<item name="wcf.acp.option.auth_type_radius_port.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.auth_type_radius_secret"><![CDATA[Radius secret]]></item>
+		<item name="wcf.acp.option.auth_type_radius_secret.description"><![CDATA[]]></item>
+	</category>
+</language>

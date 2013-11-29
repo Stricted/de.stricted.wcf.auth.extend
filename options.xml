@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
+	<import>
+		<categories>
+			<category name="general.auth">
+				<parent>general</parent>
+			</category>
+			
+			<category name="general.auth.general">
+				<parent>general.auth</parent>
+			</category>
+			<category name="general.auth.ldap">
+				<parent>general.auth</parent>
+			</category>
+			<category name="general.auth.db">
+				<parent>general.auth</parent>
+			</category>
+			<category name="general.auth.imap">
+				<parent>general.auth</parent>
+			</category>
+			<category name="general.auth.radius">
+				<parent>general.auth</parent>
+			</category>
+		</categories>
+	
+		<options>
+			<option name="auth_type">
+				<categoryname>general.auth.general</categoryname>
+				<optiontype>radiobutton</optiontype>
+				<selectoptions><![CDATA[Default
+LDAP
+DB
+IMAP
+Radius]]></selectoptions>
+				<defaultvalue>Default</defaultvalue>
+				<enableoptions><![CDATA[Default:!auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
+LDAP:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,auth_type_ldap_server,auth_type_ldap_server_port,auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
+DB:auth_check_wcf,auth_db_type,auth_db_host,auth_db_port,auth_db_user,auth_db_password,auth_db_name,auth_db_tablename,auth_db_fieldname_user,auth_db_fieldname_password,auth_db_hash_method,auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
+IMAP:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,auth_type_imap_host,auth_type_imap_port,auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
+Radius:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,auth_type_radius_host,auth_type_radius_port,auth_type_radius_secret]]></enableoptions>
+			</option>
+
+			<option name="auth_check_wcf">
+				<categoryname>general.auth.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- database -->
+			<option name="auth_db_type">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>select</optiontype>
+				<selectoptions><![CDATA[MySQL
+PostgreSQL]]></selectoptions>
+				<defaultvalue>MySQL</defaultvalue>
+			</option>
+			
+			<option name="auth_db_host">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>localhost</defaultvalue>
+			</option>
+			<option name="auth_db_user">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>root</defaultvalue>
+			</option>
+			<option name="auth_db_port">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>3306</defaultvalue>
+			</option>
+			<option name="auth_db_password">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>password</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<option name="auth_db_name">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<option name="auth_db_tablename">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<option name="auth_db_fieldname_user">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<option name="auth_db_fieldname_password">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<option name="auth_db_hash_method">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>select</optiontype>
+				<selectoptions><![CDATA[plain
+md5
+sha1
+crc32]]></selectoptions>
+				<defaultvalue>plain</defaultvalue>
+			</option>
+			<option name="auth_db_fieldname_email">
+				<categoryname>general.auth.db</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<!-- /database -->
+			
+			<!-- ldap -->
+			<option name="auth_type_ldap_server">
+				<categoryname>general.auth.ldap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[ldap://vps8.itedvo.eu/]]></defaultvalue>
+			</option>
+			<option name="auth_type_ldap_server_port">
+				<categoryname>general.auth.ldap</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[389]]></defaultvalue>
+			</option>
+			<option name="auth_type_ldap_server_dn">
+				<categoryname>general.auth.ldap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[ou=Users,DC=vps8,DC=itedvo,DC=eu]]></defaultvalue>
+			</option>			
+			<!-- /ldap -->
+			
+			<!-- imap -->
+			<option name="auth_type_imap_host">
+				<categoryname>general.auth.imap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>localhost</defaultvalue>
+			</option>
+			<option name="auth_type_imap_port">
+				<categoryname>general.auth.imap</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>143</defaultvalue>
+			</option>
+			<option name="auth_type_imap_baseOptions">
+				<categoryname>general.auth.imap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<!-- /imap-->
+			<!-- Radius -->
+			<option name="auth_type_radius_host">
+				<categoryname>general.auth.radius</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>localhost</defaultvalue>
+			</option>
+			<option name="auth_type_radius_port">
+				<categoryname>general.auth.radius</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1812</defaultvalue>
+			</option>
+			<option name="auth_type_radius_secret">
+				<categoryname>general.auth.radius</categoryname>
+				<optiontype>password</optiontype>
+				<defaultvalue></defaultvalue>
+			</option>
+			<!-- /Radius -->
+		</options>
+	</import>
+</data>

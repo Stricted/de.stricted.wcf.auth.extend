@@ -1,5 +1,5 @@
 <?php
-/* UserIMAPAuthentication.class.php - de.stricted.auth.extend
+/* UserIMAPAuthentication.class.php - de.stricted.auth.wcf.extend
  * Copyright (C) 2013 Jan Altensen (Stricted)
  * 
  * This program is free software: you can redistribute it and/or modify

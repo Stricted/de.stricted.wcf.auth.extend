@@ -1,21 +1,4 @@
 <?php
-/* UserAbstractAuthentication.class.php - de.stricted.wcf.auth.extend
- * Copyright (C) 2013 Jan Altensen (Stricted)
- * 
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- * 
- * You should have received a copy of the GNU Lesser General Public License 
- * along with this program. If not, see <http://www.gnu.org/licenses/>. 
- */
-// imports
 namespace wcf\system\user\authentication;
 use wcf\data\user\group\UserGroup;
 use wcf\data\user\UserAction;
@@ -33,6 +16,13 @@ use wcf\util\UserUtil;
 use wcf\system\language\LanguageFactory;
 use wcf\system\WCF;
 
+/**
+ * @author      Jan Altensen (Stricted)
+ * @copyright   2013-2014 Jan Altensen (Stricted)
+ * @license     GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package     be.bastelstu.jan.wcf.auth.extendet
+ * @category    Community Framework
+ */
 class UserAbstractAuthentication extends DefaultUserAuthentication {
 	protected $email = '';
 	protected $username = '';

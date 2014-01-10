@@ -18,9 +18,6 @@
 			<category name="general.auth.imap">
 				<parent>general.auth</parent>
 			</category>
-			<category name="general.auth.radius">
-				<parent>general.auth</parent>
-			</category>
 		</categories>
 	
 		<options>
@@ -30,14 +27,12 @@
 				<selectoptions><![CDATA[Default
 LDAP
 DB
-IMAP
-Radius]]></selectoptions>
+IMAP]]></selectoptions>
 				<defaultvalue>Default</defaultvalue>
 				<enableoptions><![CDATA[Default:!auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
 LDAP:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,auth_type_ldap_server,auth_type_ldap_server_port,auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
 DB:auth_check_wcf,auth_db_type,auth_db_host,auth_db_port,auth_db_user,auth_db_password,auth_db_name,auth_db_tablename,auth_db_fieldname_user,auth_db_fieldname_password,auth_db_hash_method,auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
 IMAP:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,auth_type_imap_host,auth_type_imap_port,auth_type_imap_baseOptions,!auth_type_radius_host,!auth_type_radius_port,!auth_type_radius_secret
-Radius:auth_check_wcf,!auth_db_type,!auth_db_host,!auth_db_port,!auth_db_user,!auth_db_password,!auth_db_name,!auth_db_tablename,!auth_db_fieldname_user,!auth_db_fieldname_password,!auth_db_hash_method,!auth_db_fieldname_email,!auth_type_ldap_server,!auth_type_ldap_server_port,!auth_type_ldap_server_dn,!auth_type_imap_host,!auth_type_imap_port,!auth_type_imap_baseOptions,auth_type_radius_host,auth_type_radius_port,auth_type_radius_secret]]></enableoptions>
 			</option>
 
 			<option name="auth_check_wcf">
@@ -145,23 +140,6 @@ crc32]]></selectoptions>
 				<defaultvalue></defaultvalue>
 			</option>
 			<!-- /imap-->
-			<!-- Radius -->
-			<option name="auth_type_radius_host">
-				<categoryname>general.auth.radius</categoryname>
-				<optiontype>text</optiontype>
-				<defaultvalue>localhost</defaultvalue>
-			</option>
-			<option name="auth_type_radius_port">
-				<categoryname>general.auth.radius</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>1812</defaultvalue>
-			</option>
-			<option name="auth_type_radius_secret">
-				<categoryname>general.auth.radius</categoryname>
-				<optiontype>password</optiontype>
-				<defaultvalue></defaultvalue>
-			</option>
-			<!-- /Radius -->
 		</options>
 	</import>
 </data>

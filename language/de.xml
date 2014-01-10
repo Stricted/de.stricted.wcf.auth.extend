@@ -11,8 +11,6 @@
 		<item name="wcf.acp.option.category.general.auth.ldap.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.category.general.auth.imap"><![CDATA[Authentifizierung via IMAP]]></item>
 		<item name="wcf.acp.option.category.general.auth.imap.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.category.general.auth.radius"><![CDATA[Authentifizierung via Radius]]></item>
-		<item name="wcf.acp.option.category.general.auth.radius.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.auth_check_wcf"><![CDATA[Check WCF User]]></item>
 		<item name="wcf.acp.option.auth_check_wcf.description"><![CDATA[]]></item>
 		<!--   -->
@@ -53,12 +51,5 @@
 		<item name="wcf.acp.option.auth_type_imap_port.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.auth_type_imap_baseOptions"><![CDATA[IMAP-Options]]></item>
 		<item name="wcf.acp.option.auth_type_imap_baseOptions.description"><![CDATA[]]></item>
-		<!-- Radius AUTH -->
-		<item name="wcf.acp.option.auth_type_radius_host"><![CDATA[Radius-Adresse]]></item>
-		<item name="wcf.acp.option.auth_type_radius_host.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.auth_type_radius_port"><![CDATA[Radius-Port]]></item>
-		<item name="wcf.acp.option.auth_type_radius_port.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.auth_type_radius_secret"><![CDATA[Radius-Secret]]></item>
-		<item name="wcf.acp.option.auth_type_radius_secret.description"><![CDATA[]]></item>
 	</category>
 </language>

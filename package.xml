@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.stricted.wcf.auth.extend" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+<package name="de.stricted.wcf.apcu" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
 		<packagename>Extended Auth Options</packagename>
 		<packagedescription>Extended Auth Options</packagedescription>
-		<version>1.0.0 Alpha 2</version>
-		<date>2013-11-29</date>
+		<version>1.0.0</version>
+		<date>2014-01-10</date>
 	</packageinformation>
 	
 	<authorinformation>
 		<author>Stricted</author>
-		<authorurl>http://stricted.de</authorurl>
+		<authorurl>http://tims.bastelstu.be/</authorurl>
 	</authorinformation>
 	
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0 RC 3">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.0 ">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="*">de.stricted.ldap</excludedpackage>
-	</excludedpackages>
 	
 	<instructions type="install">
 		<instruction type="file">files.tar</instruction>
